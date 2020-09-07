@@ -1,0 +1,164 @@
+
+
+body {
+    height:100%
+    margin: 0 auto;
+    padding:0;
+    font-family: 'Bubblegum Sans';
+
+}
+
+/* /* less than 768px => decrease font size , nav bar,etc
+                      main body => vertical & last order*/
+@media only screen and (max-width: 768px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+
+
+
+/* less than 320px => delete nav bar, instead of collapsed button left*/
+@media only screen and (max-width: 320px) {
+    /* .main-nav {
+        font-size: 10vw;
+        padding: 0;
+    } */
+} */
+
+.navbar{
+    
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+
+#navbarTogglerDemo01 li{
+    display: flex;
+}
+
+
+.nav-link{
+    color: darkgray;
+    transition: 1s;
+    margin-left: auto;
+}
+
+    
+
+
+
+.push :hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+/* .grid-wrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+} */
+
+.container {
+    /*show heigh: auto*/
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+}
+
+#logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+#centreName{
+    font-size: 2em; 
+    text-align: center;
+}
+
+#mainNav{
+    background-color:purple;
+}
+
+/* #advertisContainer{
+    margin-top: 20px;
+} */
+
+#advertisBox{
+    align-items: center; 
+    column-gap: 20px;
+}
+
+.advertis{
+    width:10rem;
+    padding: 2vw;
+}
+
+.flex-column{
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+}
+#loginimg{
+    width: 8rem;  
+}
+#parentPortal{
+    margin-right: auto; 
+    color:rgb(13, 77, 253); 
+}
+#adminPortal{
+    margin-right: auto; 
+    color:purple;
+}
+#links{
+    font-size:1rem; 
+    outline: none; 
+    padding-top: 1rem; 
+    align-items: center; 
+}
+.imgbox{
+    width: 4em;
+    height: 4em;
+    box-shadow: 0.8em 0.8em 1.3em rgba(0,0,0,0.1),
+    -0.8em -0.8em 1.3em rgba(255, 255, 255, 1);
+    border-radius: 0.8em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeeee;
+    transition: box-shadow, .2s ease-out;
+    position: relative;
+    margin: 0;
+}
+
+.imgbox .imgs {
+    width:2em;
+    transition: width .2s ease-out;
+
+}
+
+.imgbox:hover{
+    box-shadow: 0 0 0  rgba(0,0,0,0.1),
+    0 0 0 rgba(255,255,255,1),
+    inset 0.8em 0.8em 1.3em rgba(0,0,0,0.1),
+    inset -0.8em -0.8em 1.3em rgba(255, 255, 255, 1);
+}
+
+.imgbox:hover .imgs {
+    width:1.8em;
+    /* transition: width .2s ease-out; */
+}
