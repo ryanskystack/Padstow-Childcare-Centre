@@ -12,7 +12,7 @@
   <title>Padstow Childcare Centre</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/3cd48349b9.js" crossorigin="anonymous"></script>
   
   <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
@@ -31,9 +31,10 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
       <div class="sidebar-brand align-items-center justify-content-center">
-        <p class="sidebar-brand-text">Parent Portal</p>
+        <a href="parentDashboard.html">
+          <p class="sidebar-brand-text" style="color: #fff;">Parent Portal</p>
+        </a>        
       </div>
 
       <!-- Divider -->
@@ -41,7 +42,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="childTableForParent.html">
           <i class="fas fa-child"></i>
           <span>Child</span></a>
       </li>
@@ -51,7 +52,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="guadianTableForParent.html">
           <i class="fas fa-address-card"></i>
           <span>Guadian</span></a>
       </li>
@@ -71,11 +72,11 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Health:</h6>
             <div class="childrenItems">
-                <a class="collapse-item" href="utilities-color.html" style="color:#6f42c1"><i class="fas fa-user-md"></i>
+                <a class="collapse-item" href="doctorTableForParent.html" style="color:#6f42c1"><i class="fas fa-user-md"></i>
                      <span> Doctor</span></a>
-                <a class="collapse-item" href="utilities-border.html" style="color:#6f42c1"><i class="fas fa-pills"></i>
+                <a class="collapse-item" href="medicineTableForParent.html" style="color:#6f42c1"><i class="fas fa-pills"></i>
                      <span> Medicine</span></a>
-                <a class="collapse-item" href="utilities-animation.html" style="color:#6f42c1"><i class="fas fa-allergies"></i>
+                <a class="collapse-item" href="allergyTableForParent.html" style="color:#6f42c1"><i class="fas fa-allergies"></i>
                      <span> Allergy</span></a>
 
             </div>
@@ -88,7 +89,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="paymentTableForParent.html">
           <i class="fas fa-shopping-cart"></i>
           <span>Payment</span></a>
       </li>
@@ -97,7 +98,7 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="staffTableForParent.html">
           <i class="fas fa-chalkboard-teacher"></i>
           <span>Staff</span></a>
       </li>
@@ -222,11 +223,7 @@
               </div>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="settingsTableForParent.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Settings
                 </a>
@@ -246,13 +243,51 @@
         <!-- Begin Page Content -->
         <main class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Welcome back, <br>Luke</h1>
-
-        </div>
-    
-
-      </main>
+            <!-- Page Heading -->
+            <h1 class="h3 mb-2 text-gray-800">Staff Table</h1>
+            <p class="mb-4">You may find Staff information of your child(ren) here.</p>
+  
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Staff Name</th>
+                        <th>Gender</th>
+                        <th>On Duty?</th>
+                        <th>Child Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sami Pinto</td>
+                        <td>Female</td>
+                        <td>Yes</td>
+                        <th>Aimee Steven</th>
+                      </tr>
+                      <tr>
+                          <td>Sami Pinto</td>
+                          <td>Female</td>
+                          <td>Yes</td>
+                          <th>Alice Steven</th>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link text-gray-800" href="#">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </main>
       <!-- End of Main Content -->
 
       <!-- Footer -->

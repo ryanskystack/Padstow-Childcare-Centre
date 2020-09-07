@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="parentDashboard">
+  <meta name="description" content="adminDashboard">
   <meta name="author" content="Padstow Childcare Centre">
 
   <title>Padstow Childcare Centre</title>
@@ -33,7 +33,9 @@
 
       <!-- Sidebar - Brand -->
       <div class="sidebar-brand align-items-center justify-content-center">
-        <p class="sidebar-brand-text">Admin Portal</p>
+        <a href="adminDashboard.html">
+          <p class="sidebar-brand-text" style="color: #fff;">Admin Portal</p>
+        </a>        
       </div>
 
       <!-- Divider -->
@@ -41,7 +43,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="childTableForAdmin.html">
           <i class="fas fa-child"></i>
           <span>Child</span></a>
       </li>
@@ -51,7 +53,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="guadianTableForAdmin.html">
           <i class="fas fa-address-card"></i>
           <span>Guadian</span></a>
       </li>
@@ -71,11 +73,11 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Health:</h6>
             <div class="childrenItems">
-                <a class="collapse-item" href="utilities-color.html" style="color:#6f42c1"><i class="fas fa-user-md"></i>
+                <a class="collapse-item" href="doctorTableForAdmin.html" style="color:#6f42c1"><i class="fas fa-user-md"></i>
                      <span> Doctor</span></a>
-                <a class="collapse-item" href="utilities-border.html" style="color:#6f42c1"><i class="fas fa-pills"></i>
+                <a class="collapse-item" href="medicineTableForAdmin.html" style="color:#6f42c1"><i class="fas fa-pills"></i>
                      <span> Medicine</span></a>
-                <a class="collapse-item" href="utilities-animation.html" style="color:#6f42c1"><i class="fas fa-allergies"></i>
+                <a class="collapse-item" href="allergyTableForAdmin.html" style="color:#6f42c1"><i class="fas fa-allergies"></i>
                      <span> Allergy</span></a>
 
             </div>
@@ -88,7 +90,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="paymentTableForAdmin.html">
           <i class="fas fa-shopping-cart"></i>
           <span>Payment</span></a>
       </li>
@@ -97,7 +99,7 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="child1.html">
+        <a class="nav-link" href="staffTableForAdmin.html">
           <i class="fas fa-chalkboard-teacher"></i>
           <span>Staff</span></a>
       </li>
@@ -222,11 +224,7 @@
               </div>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="settingsTableForAdmin.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Settings
                 </a>
@@ -247,7 +245,7 @@
         <main class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Payment Tables</h1>
+          <h1 class="h3 mb-2 text-gray-800">Payment Table</h1>
           <p class="mb-4">You may find Children's payment information here.</p>
 
           <!-- DataTales Example -->
@@ -282,12 +280,12 @@
                 </div>
                 <br><br>
                <div class="justify-content-center ">
-                <input type="submit" class="btn btn-primary" name="add" value="Add" style="margin-top:1rem; margin-right: 1rem;">
-                <input type="submit" class="btn btn-primary" name="search" value="Search" style="margin-top:1rem; margin-right: 1rem;">
-                <input type="submit" class="btn btn-primary" name="delete" value="Delete" style="margin-top:1rem; margin-right: 1rem;">
-                <input type="submit" class="btn btn-primary" name="update" value="Update" style="margin-top:1rem; margin-right: 1rem;">
-                <input type="submit" class="btn btn-primary" name="viewAll" value="ViewAll" style="margin-top:1rem; margin-right: 1rem;">
-                <input type="submit" class="btn btn-primary" name="reset" value="Reset" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="add" value="Add" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="search" value="Search" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="delete" value="Delete" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="update" value="Update" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="viewAll" value="ViewAll" style="margin-top:1rem; margin-right: 1rem;">
+                <input type="button" class="btn btn-primary" name="reset" value="Reset" style="margin-top:1rem; margin-right: 1rem;">
               </div>
                 
                     
